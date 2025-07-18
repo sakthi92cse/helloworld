@@ -7,9 +7,6 @@ on:
 jobs:
   build:
     runs-on: self-hosted
-    defaults:
-      run:
-        working-directory: app 
     steps:
       
     - name: Checkout code
@@ -19,8 +16,6 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '18'
-    - name: Install dependencies
-      run: npm install
     - name: Build Docker Image
       run: docker build -t ${{ secrets.DOCKER_USERNAME }}/hellow:latest .
     - name: Login to Docker Hub
