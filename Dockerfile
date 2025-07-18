@@ -1,5 +1,5 @@
 FROM node:lts-alpine3.22
-WORKDIR /appi
+WORKDIR /app
 RUN npm init -y
 RUN npm install express
 COPY . .
