@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  static-website:
+    image: sivavel/hellow:latest        # Pull directly from Docker Hub
+    container_name: hellowelcome
+    ports:
+      - "8080:3000"             # Website accessible at port 8080
+    restart: unless-stopped
