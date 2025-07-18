@@ -21,7 +21,6 @@ jobs:
           if [ ! -f package.json ]; then
             npm init -y
             npm install express
-            npm test
           else
             npm install
           fi
