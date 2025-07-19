@@ -32,7 +32,7 @@ metadata:
   name: nodejssvc
   namespace: test-ns
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: nodejs
   ports:
