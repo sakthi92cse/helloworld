@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: nodejs
-        image: sivavel/hellow:2
+        image: sivavel/hellow:latest
         ports:
         - containerPort: 3000
         resources:
