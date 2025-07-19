@@ -3,6 +3,6 @@ WORKDIR /app
 RUN npm init -y
 RUN npm install express
 COPY . .
-EXPOSE 3000
+EXPOSE 8080
 CMD ["node", "index.js"]
 
