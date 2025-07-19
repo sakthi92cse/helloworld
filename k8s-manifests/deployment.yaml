@@ -5,6 +5,12 @@ metadata:
   namespace: test-ns
 spec:
   replicas: 2
+  revisionHistoryLimit: 5   
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1      
+      maxSurge: 1           
   selector:
     matchLabels:
       app: nodejs
@@ -38,5 +44,6 @@ spec:
   ports:
   - port: 8080
     targetPort: 3000
+
 
 
