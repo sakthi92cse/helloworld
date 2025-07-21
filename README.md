@@ -63,7 +63,12 @@ Work folder (_work default is fine).
 4. Start the Runner
 
 ./run.sh
-
+Using GitHub's Built-in Email Notifications
+-------------------------
+Go to GitHub → Settings → Notifications
+Ensure Email notifications → "Actions" is enabled.
+You will get emails when:
+A workflow fails (by default, success emails are not always sent).
 
 The runner will now listen for jobs.
 -----------------
